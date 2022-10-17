@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body id="backimage">
+
+    <h1 id="text1">Background_image usig javascript in button</h1>
+    <button id="button1" type="button" onclick="myfunction()">click me</button>
+    <script>
+        function myfunction() {
+            document.getElementById("text1").style.textAlign = "center";
+            document.getElementById("text1").style.color = "white";
+            document.getElementById("text1").style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+            document.getElementById("backimage").style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35HYtO9g1X0jQdyepdra2CWR53XuQVFcZDw&usqp=CAU)";
+            document.getElementById("backimage").style.backgroundRepeat = "no-repeat";
+            document.getElementById("backimage").style.backgroundAttachment = "fixed";
+            document.getElementById("backimage").style.backgroundSize = "100%";
+            document.getElementById("button1").style.display = "none";
+
+
+
+        }
+    </script>
+</body>
+
+</html>
